@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index - Form</title>
+</head>
+<body>
+    <h1 id="title"></h1>
+
+    <form id="form-data">
+        {{#id}}
+            <input id="id" value="{{id}}" hidden>
+        {{/id}}
+
+        <table>
+            <tr>
+                <td>
+                    <label for="nrp">NRP</label>
+                </td>
+                <td>
+                    :
+                </td>
+                <td>
+                    <input type="number" id="nrp">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name">Name</label>
+                </td>
+                <td>
+                    :
+                </td>
+                <td>
+                    <input id="name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" id="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script type="text/javascript" src="/webjars/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/add.js"></script>
+</body>
+</html>
